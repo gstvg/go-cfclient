@@ -158,7 +158,7 @@ func getUserAuth(ctx context.Context, config Config, endpoint *Endpoint) (Config
 		Scopes:   []string{""},
 		Endpoint: oauth2.Endpoint{
 			AuthURL:  endpoint.AuthEndpoint + "/oauth/auth",
-			TokenURL: endpoint.TokenEndpoint + "/oauth/token",
+			TokenURL: endpoint.AuthEndpoint + "/oauth/token",
 		},
 	}
 
